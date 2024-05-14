@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding: 0;
+   
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    /* Set font properties */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    
+    /* Set text color */
+    color: #333;
+    
+    /* Set background color */
+    background-color: #fff;
+    
+    /* Set border */
+    border: 1px solid #ccc;
+    
+    
+    /* Add padding */
+    padding: 5px;
+    
+    /* Adjust other properties as needed */
+}
+
+/* Apply styles to input text fields when in focus */
+input[type="text"]:focus {
+     /* Change outline color to blue */
+     outline: 2px solid  #2e6b99;
+    
+}
+
+select{
+    padding: 5px;
+
+}
+/* select option{
+    padding: 20px;
+} */
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns, first takes up remaining space, second is auto-sized */
+    grid-template-rows: auto; /* Single row, auto-sized */
+    grid-template-areas: "img centered"; /* Define grid areas */
+}
+
+.img {
+    grid-area: img; /* Assign grid area */
+}
+
+.centered {
+    grid-area: centered; /* Assign grid area */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center content vertically */
+    background-color: #d7e9f4;
+    border-top-left-radius: 60px; /* Adjust the value as needed */
+    border-bottom-left-radius: 60px; /* Adjust the value as needed */ /* Center text horizontally */
+}
+
+.heading{
+    line-height: 50px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    color:#e2474b;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label span{
+    color: brown;
+}
+input[type="radio"] {
+    margin-right: 7px;
+     /* Add space between the radio buttons */
+}
+
+label{
+    font-size: 18px;
+}
+
+input[type="button"]{
+    padding: 18px;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #e2474b;
+    border: none;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-top: 20px;
+    color: white;
+}
