@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+      <img src="4574-04.svg" alt="">
+        <div class="centered">
+           <span class="heading"><h1 >HTML Registration Form </h1><h1>with Validation</h1>
+           </span>
+             <form  id="myFrm" >
+         
+             <!--FIRST NAME -->
+             <label>Enter First Name:
+                <span class="required">*</span>
+                <input type="text" id="Fname" onblur="checkFname()">
+                <span id="FnameC"></span>
+            </label>
+             <br>
+             <br>
+            
+             <!-- LAST NAME -->
+             <label>Enter First Name: 
+                <span class="required">*</span>
+                <input type="text" id="Lname" onblur="checkLname()" >
+                <span id="LnameC"></span>
+             </label>
+             
+             <br>
+             <br>
+            
+
+             <!-- EMAIL  -->
+             <label>Enter Email: 
+                <span class="required">*</span>
+                <input type="email" id="email" onblur="validateEmail(this.value)">
+                <span id="emailC"></span>
+             </label>
+             <br>
+             <br>
+            
+
+              <!-- GENDER -->
+             <label>Select Gender: 
+             <input type="radio" name="gender" value="Female" >Female
+             <input type="radio" name="gender" value="Male" >Male
+             <span id="genderC"></span>
+             </label>
+             <br>
+             <br>
+
+             <!-- COUNTRY -->
+             <label>Select Country: 
+                <span class="required">*</span>
+             <select id="country" name="city">
+                <option value="pak">Pakistan</option>
+                <option value="india">India</option>
+                <option value="srilanka">Srilanka</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="china">China</option>
+             </select>
+             </label>
+             <br>
+             <br>
+            
+
+             <!-- CITY -->
+             <label>Select City: 
+                <span class="required">*</span>
+                <select id="city" name="city" >
+                   <option value="hyd">Hyderabad</option>
+                   <option value="jamshoro">Jamshoro</option>
+                   <option value="lahore">Lahore</option>
+                   <option value="islamabad">Islamabad</option>
+                   <option value="karachi">Karachi</option>
+                </select>
+             </label>
+             <br>
+             <br>
+            
+
+            
+            
+
+             <!-- PASSWORD -->
+             <label>Enter password:
+                <span class="required">*</span>
+             <input type="password" id="password" >
+             <span id="PasswordC"></span>
+             </label>
+             <br>
+             <br>
+
+             <!-- CONFIRM PASSWORD -->
+             <label>Confirm Password: 
+             <span class="required">*</span>
+             <input type="password" id="Cpassword" onblur="confirmp()">
+             <span id="confirmC"></span>
+             </label>
+             <br>
+             <br>
+            
+
+             <!-- BUTTON -->
+             <input type="button" value ="Submit" onclick="validateForm()" >
+            
+
+            </form>
+       </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
